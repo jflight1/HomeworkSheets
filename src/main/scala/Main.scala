@@ -1,7 +1,8 @@
 object Main {
 
   def main(args: Array[String]): Unit = {
-    println("hello\nthere")
+    val z: Char = 'z'
+    println(z.toString * 3)
   }
 
 }

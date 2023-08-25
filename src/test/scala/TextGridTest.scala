@@ -15,4 +15,16 @@ class TextGridTest extends AnyFlatSpec with should.Matchers {
     println(textGrid)
   }
 
+  "toString" should "work" in {
+    def tb(c: Char) = new OneCharTextBlock(c, 5,4)
+
+    val textGrid = new TextGrid(Seq(
+      Seq(tb('a'), tb('b'), tb('c')),
+      Seq(tb('d'), tb('e'), tb('f')),
+      Seq(tb('g'), tb('h'), tb('i')),
+      Seq(tb('j'), tb('k'), tb('l'))))
+
+    println(textGrid)
+  }
+
 }
