@@ -6,3 +6,7 @@ lazy val root = (project in file("."))
   .settings(
     name := "HomeworkSheets"
   )
+
+
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.15"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.15" % "test"
