@@ -31,10 +31,13 @@ class TextGridTest extends AnyFlatSpec with should.Matchers {
 
 
     val mathTextBlockFactory = new MathTextBlockFactory(
-      9, 15, 15)
+      10, 18, 18)
 
-    val textGrid = new TextGrid(10, 10, mathTextBlockFactory.textBlock)
+    val textGrid = new TextGrid(10, 9, mathTextBlockFactory.textBlock)
 
+
+    println("Ben")
+    println()
     println(textGrid)
   }
 

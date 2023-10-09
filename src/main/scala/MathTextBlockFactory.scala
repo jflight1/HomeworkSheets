@@ -22,7 +22,7 @@ class MathTextBlockFactory(val highArg: Int, val highSum: Int, val highSubtractA
       (if (plus) "+" else "-") + " " + args._2,
       "---"
     )
-    new PaddedTextBlock(7, 5, 3, 2, strings)
+    new PaddedTextBlock(6, 5, 2, 1, strings)
   }
 
   private def randomInt(low: Int, high: Int, highInclusive: Boolean = true) = {
