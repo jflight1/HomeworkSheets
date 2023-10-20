@@ -1,9 +1,9 @@
 class TextGrid(val textBlocks: Seq[Seq[TextBlock]]) {
 
-  def this(width: Int, height: Int, textBlockGetter: () => TextBlock) = {
+  def this(columns: Int, rows: Int, textBlockGetter: () => TextBlock) = {
 
-    this(Seq.fill[Seq[TextBlock]](height)(
-      Seq.fill[TextBlock](width)(textBlockGetter())))
+    this(Seq.fill[Seq[TextBlock]](rows)(
+      Seq.fill[TextBlock](columns)(textBlockGetter())))
   }
 
   override def toString: String = {

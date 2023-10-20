@@ -2,7 +2,8 @@ class PaddedTextBlock(width: Int, height: Int, rightPadding: Int, topPadding: In
   extends TextBlock(PaddedTextBlock.toStrings(width, height, rightPadding, topPadding, strings))
 
 object PaddedTextBlock {
-  def toStrings(width: Int, height: Int, rightPadding: Int, topPadding: Int, strings: Seq[String])
+  def toStrings(width: Int, height: Int, rightPadding: Int, topPadding: Int,
+                strings: Seq[String])
   : Seq[String] = {
 
     assert(strings.size + topPadding <= height)

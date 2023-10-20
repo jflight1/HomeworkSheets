@@ -26,7 +26,7 @@ class ThreeDigitSubtractionFactory {
       "- " + seqToString(n2),
       "-------"
     )
-    new PaddedTextBlock(12, 4, 2, 1, strings)
+    new PaddedTextBlock(12, 5, 2, 1, strings)
   }
 
   private def randomInt(low: Int, high: Int, highInclusive: Boolean = true) = {
